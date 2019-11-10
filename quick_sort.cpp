@@ -26,7 +26,7 @@ int partition(int arr[], int startIndex, int lastIndex){
         if(arr[j]>=pivot){
             //Swap
             i--;
-            swap(arr[j],arr[i]);
+            swap(&arr[j],&arr[i]);
             j--;
         }
     }
@@ -43,9 +43,9 @@ void quickSort(int arr[], int startIndex, int lastIndex){
 }
 
 int main(){
-    int arr[] = {5,3,8,4,10,100,9,9,10,8};
-    quickSort(arr,0,9);
-    printArray(arr,0,9);
+    int arr[] = {11,10,9,8,7,6,5,4,3,2,1};
+    quickSort(arr,0,10);
+    printArray(arr,0,10);
     
     return 0;
 }
